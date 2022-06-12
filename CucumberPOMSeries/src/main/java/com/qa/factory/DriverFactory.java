@@ -1,9 +1,15 @@
 package com.qa.factory;
 
+import java.awt.Window;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -23,7 +29,8 @@ public class DriverFactory {
 		
 		if (browser.equals("Chrome")){
 			WebDriverManager.chromedriver().setup();
-			tlDriver.set(new ChromeDriver());	
+			tlDriver.set(new ChromeDriver());
+			
 		}
 		else if (browser.equals("Firefox")){
 			WebDriverManager.firefoxdriver().setup();
@@ -39,6 +46,13 @@ public class DriverFactory {
 		}
 			getDriver().manage().deleteAllCookies();
 			getDriver().manage().window().maximize();
+			//getDriver().manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+			//getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+//			JavascriptExecutor executor = (JavascriptExecutor)getDriver();
+//			executor.executeScript("document.body.style.zoom = '0.1'");
+			
+//			DesiredCapabilities caps = new DesiredCapabilities();
+//			caps.setCapability("screen-resolution", "800x600");
 			return getDriver();
 	
 			

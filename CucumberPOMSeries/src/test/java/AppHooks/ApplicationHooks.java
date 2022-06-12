@@ -1,7 +1,13 @@
 package AppHooks;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -27,12 +33,17 @@ public class ApplicationHooks {
 	
 }
     @Before(order =  1)
-    public void launchBrowser() {
+    public void launchBrowser() throws InterruptedException {
     	
     	String browserName = prop.getProperty("browser");
     	
     	driverFactory=new DriverFactory();
     	driver=driverFactory.init_driver(browserName);
+//    	driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+//    	Thread.sleep(3000);
+//    	JavascriptExecutor executor = (JavascriptExecutor)driver;
+//		executor.executeScript("document.body.style.zoom = '0.7'");
+		
     	
     }
     @After(order = 0)
@@ -41,17 +52,24 @@ public class ApplicationHooks {
     }
     
     @After(order = 1)
-    public void tearDown(Scenario scenario) {
-    	if (scenario.isFailed()) {
-    		
-    		String screenshotName = scenario.getName().replaceAll("  ", "_");
-    		
-    		byte[] sourcePath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-    		
-    		scenario.attach(sourcePath, "image/png", screenshotName);
-    	}
-    	
-		
-    	
+	public void tearDown(Scenario scenario) throws IOException {
+		if (scenario.isFailed()==true||scenario.isFailed()==false) {
+			
+			Date date=new Date();
+			SimpleDateFormat formatter = new SimpleDateFormat("dd_MM_yyyy HH:mm:ss");  
+	
+		    //System.out.println(formatter.format(date)); 
+			
+			
+			// take screenshot:
+			String screenshotName = scenario.getName().replaceAll(" ", "_")+" "+formatter.format(date);			
+			
+			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		    byte[] fileContent = FileUtils.readFileToByteArray(src);
+		    scenario.attach(fileContent, "image/png", screenshotName);
+			
+			
+
+		}
     }
 }

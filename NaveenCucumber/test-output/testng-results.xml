@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="6" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-12T16:44:12Z" name="Default suite" finished-at="2022-06-12T16:50:35Z" duration-ms="382625">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-06-12T16:44:12Z" name="Default test" finished-at="2022-06-12T16:50:35Z" duration-ms="382625">
+      <class name="parallel.ParallelRun">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:12Z" name="setUpClass" finished-at="2022-06-12T16:44:14Z" duration-ms="1763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:11Z" duration-ms="116903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts section count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:47:09Z" duration-ms="175080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:45:38Z" duration-ms="83953" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 0(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:45:53Z" duration-ms="98630" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 1(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:50:28Z" duration-ms="374186" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 285.080
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANILs-MacBook-Air.local', ip: '2405:204:285:e53:ed05:6787:5516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/5y/jr1mf3tx1jx...}, goog:chromeOptions: {debuggerAddress: localhost:59143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34efe54c7b884e7b6040a1e044e4b607]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 285.080
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANILs-MacBook-Air.local', ip: '2405:204:285:e53:ed05:6787:5516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/5y/jr1mf3tx1jx...}, goog:chromeOptions: {debuggerAddress: localhost:59143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34efe54c7b884e7b6040a1e044e4b607
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at parallel.ContactUsSteps.user_navigates_to_contact_us_page(ContactUsSteps.java:24)
+at ✽.user navigates to contact us page(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/ContactUs.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:23Z" duration-ms="129437" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 3(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:41Z" duration-ms="146892" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 2(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:28Z" duration-ms="134451" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Contact Us scenario with different set of data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Contact Us Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[/Users/naveenautomationlabs/Desktop/automation.xlsx]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: /Users/naveenautomationlabs/Desktop/automation.xlsx
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:317)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:295)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:276)
+at com.qa.util.ExcelReader.getWorkBook(ExcelReader.java:44)
+at com.qa.util.ExcelReader.getSheetByName(ExcelReader.java:34)
+at com.qa.util.ExcelReader.getData(ExcelReader.java:23)
+at parallel.ContactUsSteps.user_fills_the_form_from_given_sheetname_and_rownumber(ContactUsSteps.java:32)
+at ✽.user fills the form from given sheetname "contactus" and rownumber 5(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/ContactUs.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:47:56Z" duration-ms="222157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:44:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:00Z" duration-ms="105574" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Forgot Password link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANILs-MacBook-Air.local', ip: '2405:204:285:e53:ed05:6787:5516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/5y/jr1mf3tx1jx...}, goog:chromeOptions: {debuggerAddress: localhost:59153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fae8a4f0ec7b7d5c8a05d362ad7c34c8
+*** Element info: {Using=link text, value=Forgot your password?111}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?111"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANILs-MacBook-Air.local', ip: '2405:204:285:e53:ed05:6787:5516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/5y/jr1mf3tx1jx...}, goog:chromeOptions: {debuggerAddress: localhost:59153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fae8a4f0ec7b7d5c8a05d362ad7c34c8
+*** Element info: {Using=link text, value=Forgot your password?111}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:28)
+at parallel.LoginPageSteps.forgot_your_password_link_should_be_displayed(LoginPageSteps.java:37)
+at ✽.forgot your password link should be displayed(file:///Users/anilmore/eclipse-workspace/NaveenCucumber/src/test/resources/parallel/LoginPage.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:45:38Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:23Z" duration-ms="45272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login page feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:45:53Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:56Z" duration-ms="63738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:46:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-12T16:46:56Z" duration-ms="56553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accounts section count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Account Page Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@78e4deb0]" started-at="2022-06-12T16:50:28Z" name="tearDownClass" finished-at="2022-06-12T16:50:35Z" duration-ms="6632" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['void org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.constructAppearances()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.constructAppearances()'
+at org.vandeseer.easytable.drawing.cell.ParagraphCellDrawer.drawContent(ParagraphCellDrawer.java:57)
+at org.vandeseer.easytable.TableDrawer.lambda$new$0(TableDrawer.java:61)
+at org.vandeseer.easytable.TableDrawer.drawRow(TableDrawer.java:170)
+at org.vandeseer.easytable.TableDrawer.drawWithFunction(TableDrawer.java:153)
+at org.vandeseer.easytable.TableDrawer.lambda$drawPage$1(TableDrawer.java:83)
+at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+at org.vandeseer.easytable.TableDrawer.drawPage(TableDrawer.java:82)
+at org.vandeseer.easytable.TableDrawer.draw(TableDrawer.java:78)
+at tech.grasshopper.pdf.chapter.detailed.DetailedRowComponent.display(DetailedRowComponent.java:90)
+at tech.grasshopper.pdf.chapter.detailed.DetailedPage.lambda$0(DetailedPage.java:42)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at tech.grasshopper.pdf.chapter.detailed.DetailedPage.createPage(DetailedPage.java:39)
+at tech.grasshopper.pdf.chapter.detailed.DetailedChapter.sendToPage(DetailedChapter.java:115)
+at tech.grasshopper.pdf.chapter.detailed.DetailedChapter.createAndSendPageData(DetailedChapter.java:50)
+at tech.grasshopper.pdf.chapter.detailed.DetailedChapter.createChapter(DetailedChapter.java:28)
+at tech.grasshopper.pdf.PDFCucumberReport.lambda$0(PDFCucumberReport.java:100)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at tech.grasshopper.pdf.PDFCucumberReport.createReport(PDFCucumberReport.java:100)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter.flush(ExtentPDFCucumberReporter.java:66)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter.access$1(ExtentPDFCucumberReporter.java:57)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter$1.onNext(ExtentPDFCucumberReporter.java:42)
+at tech.grasshopper.pdf.extent.ExtentPDFCucumberReporter$1.onNext(ExtentPDFCucumberReporter.java:1)
+at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:284)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:296)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$6(ExtentCucumberAdapter.java:295)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:132)
+at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:1)
+at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:93)
+at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:74)
+at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:126)
+at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel.ParallelRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
