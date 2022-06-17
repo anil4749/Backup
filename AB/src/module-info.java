@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author anilmore
- *
- */
-module AB {
-}
